@@ -1,7 +1,7 @@
 # Base de dados em Linked Open Data - Eleições 2014
 
 # Índice
-1. [Introdução](#introdução)
+1. [Introdução](#introducao)
 1. [Tecnologias usadas](#tecnologias-usadas)
 1. [Fonte dos dados utilizados](#fonte-dos-dados-utilizados)
 1. [Informações disponibilizadas](#informações-disponibilizadas)
