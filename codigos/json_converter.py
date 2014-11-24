@@ -221,7 +221,3 @@ def gera_rdf_excelencias():
 		rdf_resource += "</rdf:Description>\n"
 		
 	return rdf_resource.encode("utf-8")
-
-# arquivo = open('candidatos.rdf', 'w+')
-# arquivo.write(gera_rdf_candidatos())
-# arquivo.close()
