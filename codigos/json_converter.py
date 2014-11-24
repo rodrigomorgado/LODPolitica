@@ -74,7 +74,7 @@ def gera_rdf_candidatos():
 	rdf_resource = ""
 
 	for estado in sigla_estados:
-		for id_cargo in range(1,2):
+		for id_cargo in range(1,total_cargos+1):
 			
 			if estado != "BR" and id_cargo == 1:
 				continue
@@ -221,3 +221,7 @@ def gera_rdf_excelencias():
 		rdf_resource += "</rdf:Description>\n"
 		
 	return rdf_resource.encode("utf-8")
+
+# arquivo = open('candidatos.rdf', 'w+')
+# arquivo.write(gera_rdf_candidatos())
+# arquivo.close()
