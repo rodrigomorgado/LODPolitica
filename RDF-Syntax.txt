@@ -1,0 +1,154 @@
+@prefix politica: <LINK_POLITICA> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+politica:estadoId a rdf:Property ;
+     rdfs:label "estadoId" ;
+     rdfs:comment "O identificador do Estado/País específico" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range xsd:nonNegativeInteger . 
+
+politica:nome a rdf:Property ;
+     rdfs:label "nome" ;
+     rdfs:comment "O nome do objeto identificado" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:sigla a rdf:Property ;
+     rdfs:label "sigla" ;
+     rdfs:comment "A sigla identificativa do estado/partido mencionado" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:partidoId a rdf:Property ;
+     rdfs:label "partidoId" ;
+     rdfs:comment "O identificador do partido específico" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:partidosPassados a rdf:Property ;
+     rdfs:label "partidosPassados" ;
+     rdfs:comment "Uma lista dos partidos que o político pertenceu e pertence" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:miniBio a rdf:Property ;
+     rdfs:label "miniBio" ;
+     rdfs:comment "Uma pequena biografia do político" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:cargosPassados a rdf:Property ;
+     rdfs:label "cargosPassados" ;
+     rdfs:comment "Uma lista dos cargos que o político cumpriu e cumpre" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:casa a rdf:Property ;
+     rdfs:label "casa" ;
+     rdfs:comment "O órgão ao qual o político pertence" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:anosPassados a rdf:Property ;
+     rdfs:label "anosPassados" ;
+     rdfs:comment "Uma lista dos anos em que o político concorreu a um cargo público" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:resultadosPassados a rdf:Property ;
+     rdfs:label "resultadosPassados" ;
+     rdfs:comment "Com base na lista de anos em que o político concorreu a um cargo, essa lista mostra se ele foi eleito ou não" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:partido a rdf:Property ;
+     rdfs:label "partido" ;
+     rdfs:comment "Partido ao qual o político pertence atualmente" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:processos a rdf:Property ;
+     rdfs:label "processos" ;
+     rdfs:comment "Uma lista dos processos que o político responde" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:titulo a rdf:Property ;
+     rdfs:label "titulo" ;
+     rdfs:comment "O identificador do título eleitoral do político" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:votosPassados a rdf:Property ;
+     rdfs:label "votosPassados" ;
+     rdfs:comment "Com base na lista de anos em que o político concorreu a um cargo, essa lista mostra a quantidade de votos que ele recebeu em cada ano" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:bancadas a rdf:Property ;
+     rdfs:label "bancadas" ;
+     rdfs:comment "Uma lista das bancadas que o político participa" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:estado a rdf:Property ;
+     rdfs:label "estado" ;
+     rdfs:comment "O estado no qual o político em questão representa" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:apelido a rdf:Property ;
+     rdfs:label "apelido" ;
+     rdfs:comment "Nome com o qual o político em questão é conhecido" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:ano a rdf:Property ;
+     rdfs:label "ano" ;
+     rdfs:comment "Ano em que o bem em questão foi declarado" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:montante a rdf:Property ;
+     rdfs:label "montante" ;
+     rdfs:comment "Valor monetário em reais do bem em questão" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:bem a rdf:Property ;
+     rdfs:label "bem" ;
+     rdfs:comment "Descrição bem em questão" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:municipiosPassados a rdf:Property ;
+     rdfs:label "municipiosPassados" ;
+     rdfs:comment "Uma lista dos municipios que o político representou e representa" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:estadosPassados a rdf:Property ;
+     rdfs:label "estadosPassados" ;
+     rdfs:comment "Uma lista dos estados que o político representou e representa" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:CPF a rdf:Property ;
+     rdfs:label "CPF" ;
+     rdfs:comment "Número do CPF do político em questão" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:id a rdf:Property ;
+     rdfs:label "id" ;
+     rdfs:comment "Identificador do político em questão" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
+
+politica:cargos a rdf:Property ;
+     rdfs:label "cargos" ;
+     rdfs:comment "Descrição do cargo atual do político" ;
+     rdfs:isDefinedBy <LINK_POLITICA> ;
+     rdfs:range rdf:Property . 
