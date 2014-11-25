@@ -59,6 +59,12 @@
 
 ## Dificuldades encontradas
 
+  Embora muito eficiente, a ferramenta dataTXT por algumas vezes acaba por fazer um link incorreto do recurso colocado na base de dados criada. Ao realizar testes com diferentes níveis de confiança para a extração de entidades nomeadas no dataTXT verificou-se que, com uma confiança alta, algumas entidades nomeadas não dúbias não eram reconhecidas e outras continuavam sendo classificadas incorretamente. Ao colocar a confiança baixa, o número de entidades encontradas era consideravelmente maior e o número de erros era semelhante, proporcionalmente. Optou-se, então, por colocar um nível de confiança baixo na extração das entidades nomeadas para encontrar o link da DBPedia associado ao recurso inserido.
+  
+  O fato de o número de erros continuar semelhante independentemente do nível de confiança colocado se deve ao fato de algumas das consultas serem dúbias, ou seja, de haver mais de uma entidade com a mesma representação. Dois exemplos deixam claro essa questão.
+  
+  A API da Transparência Brasil fornece apenas a sigla de cada um dos partidos. Portanto, ao fazer a consulta no dataTXT para o partido, colocou-se para consulta a sua sigla. Um dos partidos existentes no cenário nacional é o PR, Partido da República. Ao fazer a consulta com a sigla PR no dataTXT, essa ferramenta retornava com grande confiança que essa sigla se referia ao estado do Paraná, cuja sigla também é PR. O mesmo ocorre quando é colocado o nome de um político que possua um homônimo famoso.
+
 ## Trabalhos futuros
 
 ===========
