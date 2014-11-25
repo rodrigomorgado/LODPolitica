@@ -63,4 +63,4 @@
 
 ===========
 
-Este trabalhos foi realizado como trabalho final da disciplina TESI - 2014.2
+Este trabalhos foi realizado como trabalho final da disciplina Tópicos Espceiais em Sistemas Inteligentes, em 2014.2, na Universidade Federal do Rio de Janeiro - UFRJ.
