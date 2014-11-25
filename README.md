@@ -49,6 +49,12 @@
 
 ## Tecnologias usadas
 
+  Para gerar o rdf e fazer as requisições para a API, optou-se por utilizar a linguagem Python. Os códigos fontes para as requisições feitas e para a geração do arquivo RDF encontram-se nesse repositório, na pasta códigos.
+  
+  Para linkar a base de dados criada com outra base de dados na nuvem de LOD, optou-se por utilizar a ferramenta dataTXT (https://dandelion.eu/products/datatxt/). Essa ferramente foi encontrada e apresentada em uma aula da disciplina pela prória dupla. Essa ferramenta possui uma série de recursos que auxiliam na extração de entidades nomeadas em textos. Ela não só identifica as entidades, como traz uma série de outras informações referentes as mesmas.
+  
+  Um fator diferencial do dataTXT para outras ferramentas é a capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramente mostrou-se muito útil e simplificou o trabalho de linkagem com outra base LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
+
 ## Sintaxe 'politica'
 
 ## Dificuldades encontradas
