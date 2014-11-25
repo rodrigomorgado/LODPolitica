@@ -16,9 +16,38 @@
   
   A API é aberta, bastando criar um cadastro no site do próprio portal e inserir no cadastro o app que deseja ser criado utilizando a API. Uma vez feito esse processo, é disponibilizado um token para acesso a base de dados. A base de dados confirmou suas características de corretude, com dados confiáveis, e completude, tendo sido encontrados poucos campos nulos ou sem informação.
 
-## Tecnologias usadas
+## Informações disponibilizadas na API
 
-## Informações disponibilizadas
+  Na API do portal Transparência Brasil, há uma série de informações disponibilizadas. Essas informações podem ser divididas em 5 categorias principais:
+    1. Candidatos - Fornece informações sobre os candidatos a todos os cargos nas eleições de 2014
+    2. Partidos - Fornece dados básicos sobre todos os partidos registrados que tiveram candidatos nas eleições de 2014
+    3. Estados - Disponibiliza dados básicos sobre os estados que compõe da federação
+    4. Cargos - Fornece uma lista de todos os cargos em disputa nas eleições de 2014
+    5. Excelências - Fornece informações pessoais e sobre a atuação dos deputados e senadores em atuação no cenário político brasileiro
+    
+### 1. Candidatos
+ 
+ Para cada candidatos, são fornecidas uma série de informações pessoais, como nome completo, CPF, estado da federação a qual ele pertence, entre outras. Além disso, são fornecidos links sobre possíveis processos aos quais o candidato está sendo julgado.
+ 
+  É possível também recuperar informações sobre os bens declarados do candidato, sobre suas candidaturas em eleições anteriores e estatísticas sobre a sua atuação em cargos públicos ocupados pelo menos ao longo de sua carreira.
+  
+### 2. Partidos
+
+  A API fornece apenas a sigla de cada um dos partidos que tiveram candidatos na eleição de 2014.
+
+### 3. Estados
+
+  A API fornece o nome e a sigla de cada um dos estados da federação, incluindo o distrito federal e a própria União.
+
+### 4. Cargos
+
+  A API fornece o nome de cada um dos cargos concorridos nas últimas eleições, incluindo suplentes de senadores, vice-presidentes e vice-governadores.
+
+### 5. Excelências
+
+ A API fornece dados pessoais e históricos sobre atuação e candidaturas passadas dos políticos que estão atualemente em exercício na câmara dos deputados e no senado federal. Além disso, a base fornece também dados sobre os bens declarados de cada uma das atuais excelências do cenário político brasileiro.
+
+## Tecnologias usadas
 
 ## Sintaxe 'politica'
 
