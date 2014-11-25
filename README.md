@@ -53,7 +53,7 @@
   
   Para linkar a base de dados criada com outra base de dados na nuvem de LOD, optou-se por utilizar a ferramenta dataTXT (https://dandelion.eu/products/datatxt/). Essa ferramente foi encontrada e apresentada em uma aula da disciplina pela prória dupla. Essa ferramenta possui uma série de recursos que auxiliam na extração de entidades nomeadas em textos. Ela não só identifica as entidades, como traz uma série de outras informações referentes as mesmas.
   
-  Um fator diferencial do dataTXT para outras ferramentas é a capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramente mostrou-se muito útil e simplificou o trabalho de linkagem com outra base LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
+  Um fator diferencial do dataTXT para outras ferramentas é a capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramenta mostrou-se muito útil e simplificou o trabalho de linkagem com outra base LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
 
 ## Sintaxe 'politica'
 
@@ -69,4 +69,4 @@
 
 ===========
 
-Este trabalhos foi realizado como trabalho final da disciplina Tópicos Espceiais em Sistemas Inteligentes, em 2014.2, na Universidade Federal do Rio de Janeiro - UFRJ.
+Este trabalho foi realizado como trabalho final da disciplina Tópicos Espceiais em Sistemas Inteligentes, em 2014.2, na Universidade Federal do Rio de Janeiro - UFRJ.
