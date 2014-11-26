@@ -16,7 +16,7 @@
   
   A API é aberta, bastando criar um cadastro no site do próprio portal e inserir no cadastro o app que deseja ser criado utilizando a API. Uma vez feito esse processo, é disponibilizado um token para acesso a base de dados. A base de dados confirmou suas características de corretude, com dados confiáveis, e completude, tendo sido encontrados poucos campos nulos ou sem informação.
 
-## Informações disponibilizadas na API
+## Informações disponibilizadas na API da Transparência Brasil
 
   Na API do portal Transparência Brasil, há uma série de informações disponibilizadas. Essas informações podem ser divididas em 5 categorias principais:
   
