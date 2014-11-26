@@ -64,6 +64,8 @@
   O fato de o número de erros continuar semelhante independentemente do nível de confiança colocado se deve ao fato de algumas das consultas serem dúbias, ou seja, de haver mais de uma entidade com a mesma representação. Dois exemplos deixam claro essa questão.
   
   A API da Transparência Brasil fornece apenas a sigla de cada um dos partidos. Portanto, ao fazer a consulta no dataTXT para o partido, colocou-se para consulta a sua sigla. Um dos partidos existentes no cenário nacional é o PR, Partido da República. Ao fazer a consulta com a sigla PR no dataTXT, essa ferramenta retornava com grande confiança que essa sigla se referia ao estado do Paraná, cuja sigla também é PR. O mesmo ocorre quando é colocado o nome de um político que possua um homônimo famoso.
+  
+  Outra questão encontrada durante o desenvolvimento foi a falta de atualização dos dados da API da Transparência Brasil no que se refere às empresas doadoras dos candidatos no ano de 2014. A API fornece a opção de retornar as empresas que fizeram doações para cada um dos candidatos e o montante doado. Porém, até o momento da execução desse trabalho, a API não disponibilzava esses dados sobre as eleições do ano de 2014, apenas para dados de anos anteriores, como em 2010.
 
 ## Trabalhos futuros
 
