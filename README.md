@@ -19,11 +19,11 @@
 ## Informações disponibilizadas na API
 
   Na API do portal Transparência Brasil, há uma série de informações disponibilizadas. Essas informações podem ser divididas em 5 categorias principais:
-    1. Candidatos - Fornece informações sobre os candidatos a todos os cargos nas eleições de 2014
-    2. Partidos - Fornece dados básicos sobre todos os partidos registrados que tiveram candidatos nas eleições de 2014
-    3. Estados - Disponibiliza dados básicos sobre os estados que compõe da federação
-    4. Cargos - Fornece uma lista de todos os cargos em disputa nas eleições de 2014
-    5. Excelências - Fornece informações pessoais e sobre a atuação dos deputados e senadores em atuação no cenário político brasileiro
+    1. [Candidatos - Fornece informações sobre os candidatos a todos os cargos nas eleições de 2014]
+    1. [Partidos - Fornece dados básicos sobre todos os partidos registrados que tiveram candidatos nas eleições de 2014]
+    1. [Estados - Disponibiliza dados básicos sobre os estados que compõe da federação]
+    1. [Cargos - Fornece uma lista de todos os cargos em disputa nas eleições de 2014]
+    1. [Excelências - Fornece informações pessoais e sobre a atuação dos deputados e senadores em atuação no cenário político brasileiro]
     
 ### 1. Candidatos
  
