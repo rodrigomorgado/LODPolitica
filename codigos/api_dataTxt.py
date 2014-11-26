@@ -3,18 +3,32 @@
 import urllib2
 import urllib
 import json
+from random import randrange
 
 def recuperar_servico(texto):
-    json_parameters = {
-    	'lang' : 'pt',
-    	'min_confidence': '0.01',
-    	'text': texto,
-    	'social.parse_hashtag': 'False',
-    	'country': '-1',
-    	'include': 'lod',
-    	'$app_id': 'bb35be37',
-    	'$app_key': '4ba9707d6403aeb35114cd9cf224c02d'
-    }
+
+    if randrange(2) == 0:
+        json_parameters = {
+        	'lang' : 'pt',
+        	'min_confidence': '0.01',
+        	'text': texto,
+        	'social.parse_hashtag': 'False',
+        	'country': '-1',
+        	'include': 'lod',
+        	'$app_id': 'bb35be37',
+        	'$app_key': '4ba9707d6403aeb35114cd9cf224c02d'
+        }
+    else:
+        json_parameters = {
+            'lang' : 'pt',
+            'min_confidence': '0.01',
+            'text': texto,
+            'social.parse_hashtag': 'False',
+            'country': '-1',
+            'include': 'lod',
+            '$app_id': 'bb35be37',
+            '$app_key': '4ba9707d6403aeb35114cd9cf224c02d'
+        }
 
     parameters = urllib.urlencode(json_parameters)
 
