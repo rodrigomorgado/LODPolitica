@@ -8,13 +8,15 @@
   
   Durante as aulas da disciplina, foram apresentados alguns conceitos sobre o Linked Open Data, que se trata basicamente de uma série de base de dados aberta, que disponibiliza seus dados na Web em formato RDF, e esses datasets são ligados uns aos outros.
   
-  A partir daí, surgiu a ideia a partir de um e-mail de unir esses dois mundos e gerar uma base de dados sobre o cenário político brasileiro em RDF, e uni-la a outras bases existentes, contribuindo para a nuvem de LOD. Esse relatório tem por objetivo apresentar as ferramentas e etapas realizadas durante o trabalho, além de citar as dificuldade encontradas ao longo do desenvolvimento e sugestões de trabalhos futuros.
+  A partir daí, surgiu a ideia, a partir de um e-mail enviado no grupo de discussão da disciplina, de unir esses dois mundos e gerar uma base de dados sobre o cenário político brasileiro em RDF, e uni-la a outras bases existentes, contribuindo para a nuvem de LOD. Esse relatório tem por objetivo apresentar as ferramentas e etapas realizadas durante o trabalho, além de citar as dificuldade encontradas ao longo do desenvolvimento e sugestões de trabalhos futuros.
 
 ## Fonte dos dados utilizados
 
   Para a realização do trabalho, era necessário encontrar uma base de dados com uma boa documentação das informações nela contidas, além de possuir dados variados e confiáveis sobre o cenário político e eleitoral brasileiro. O portal Transparência Brasil (http://www.transparencia.org.br/) disponibilizou em agosto desse ano uma API (http://dev.transparencia.org.br/api-portal/), para acesso aos seus dados, a fim de estimular a construção de projetos e apps que auxiliassem na divulgação e utilização dessas informações pela população, contribuindo para a democracia brasileira.
   
   A API é aberta, bastando criar um cadastro no site do próprio portal e inserir no cadastro o app que deseja ser criado utilizando a API. Uma vez feito esse processo, é disponibilizado um token para acesso a base de dados. A base de dados confirmou suas características de corretude, com dados confiáveis, e completude, tendo sido encontrados poucos campos nulos ou sem informação.
+  
+  Outras bases semelhantes foram procuradas, mas somente uma foi encontrada. Tratava-se de um arquivo .csv contendo informações sobre os candidatos a eleição no ano de 2014. Porém, esse tabela não possuía nenhum metadado, o que dificultaria bastante a sua utilização. Portanto, para esse trabalho, apenas os dados da API da Transparência Brasil foram utilizados como fonte de dados da polítca brasileira
 
 ## Informações disponibilizadas na API da Transparência Brasil
 
