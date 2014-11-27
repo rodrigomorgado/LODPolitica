@@ -26,8 +26,8 @@ def recuperar_servico(texto):
             'social.parse_hashtag': 'False',
             'country': '-1',
             'include': 'lod',
-            '$app_id': 'bb35be37',
-            '$app_key': '4ba9707d6403aeb35114cd9cf224c02d'
+            '$app_id': 'b5df0da9',
+            '$app_key': '6c7bd956e5676fa025ce50fcdf0885e7'
         }
 
     parameters = urllib.urlencode(json_parameters)
