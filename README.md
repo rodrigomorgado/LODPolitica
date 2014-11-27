@@ -90,7 +90,7 @@
   
   Uma terceira possibilidade de trabalho é aguradar a atualização da API da Transparência Brasil, para que sejam informados os doadores dos candidatos das eleições em 2014. Assim, a atual base de dados poderá receber mais informações relevantes sobre o cenário político brasileiro. Uma sugestão dada em aula é a de colocar as empresas doadoras numa região separada do RDF, ao invés de ser um recurso 'interno' de cada candidato. Essa separação dos doadores numa região própria poderia facilitar uma consulta futura para saber o montante doado por uma certa empresa, e quais candidatos foram financiados pela mesma.
   
-  Por fim, uma vez que a base esteja completa e que tenha tido a sua qualidade aferida, ainda é necessário preparar a base para disponibilizá-la na Web, de tal forma que ela seja integrada a atual nuvem de LOD.
+  Por fim, uma vez que a base esteja completa e que tenha tido a sua qualidade aferida, ainda é necessário preparar a base para disponibilizá-la para consultas na Web, de tal forma que ela fique integrada a atual nuvem de LOD.
 
 ===========
 
