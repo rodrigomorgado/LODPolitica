@@ -62,6 +62,11 @@
 
 ## Sintaxe 'politica'
 
+ Por estarmos trabalhando com uma base de dados própria, preferimos utilizar de nossa própria sintaxe. Para isso, criamos a sintaxe 'política'. 
+ Para criar a sintaxe, primeiro é necessário dizer que utilizamos dos prefixos de xsd, rdf e rdfs para trabalhar melhor com nossos dados.
+ A maior parte das propriedades que criamos segue o mesmo padrão. Elas são definidas como rdf:Property e seus rdfs:range e são instâncias também de rdf:Property. Elas possuem labels que discernem sua utilidade, como "municipiosPassados", "apelido" e "partido". Cada um possui um rdfs:comment que explicite sua função.
+ Certas propriedades, no entanto, são puramente numéricas, como "estadoId", "CPF" e "titulo". Assim, consideramos elas como instâncias de números inteiros não-negativos, e alteramos o rdfs:range para xsd:nonNegativeInteger.
+
 ## Dificuldades encontradas
 
   Embora muito eficiente, a ferramenta dataTXT por algumas vezes acaba por fazer um link incorreto do recurso colocado na base de dados criada. Ao realizar testes com diferentes níveis de confiança para a extração de entidades nomeadas no dataTXT verificou-se que, com uma confiança alta, algumas entidades nomeadas não dúbias não eram reconhecidas e outras continuavam sendo classificadas incorretamente. Ao colocar a confiança baixa, o número de entidades encontradas era consideravelmente maior e o número de erros era semelhante, proporcionalmente. Optou-se, então, por colocar um nível de confiança baixo na extração das entidades nomeadas para encontrar o link da DBPedia associado ao recurso inserido.
