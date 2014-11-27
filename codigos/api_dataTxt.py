@@ -7,28 +7,16 @@ from random import randrange
 
 def recuperar_servico(texto):
 
-    if randrange(2) == 0:
-        json_parameters = {
-        	'lang' : 'pt',
-        	'min_confidence': '0.01',
-        	'text': texto,
-        	'social.parse_hashtag': 'False',
-        	'country': '-1',
-        	'include': 'lod',
-        	'$app_id': 'bb35be37',
-        	'$app_key': '4ba9707d6403aeb35114cd9cf224c02d'
-        }
-    else:
-        json_parameters = {
-            'lang' : 'pt',
-            'min_confidence': '0.01',
-            'text': texto,
-            'social.parse_hashtag': 'False',
-            'country': '-1',
-            'include': 'lod',
-            '$app_id': 'b5df0da9',
-            '$app_key': '6c7bd956e5676fa025ce50fcdf0885e7'
-        }
+    json_parameters = {
+        'lang' : 'pt',
+        'min_confidence': '0.01',
+        'text': texto,
+        'social.parse_hashtag': 'False',
+        'country': '-1',
+        'include': 'lod',
+        '$app_id': '', #ID do seu app
+        '$app_key': '' #chave do seu app
+    }
 
     parameters = urllib.urlencode(json_parameters)
 
