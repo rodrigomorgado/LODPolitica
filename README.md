@@ -54,14 +54,6 @@
 
  A API fornece dados pessoais e históricos sobre atuação e as candidaturas passadas dos políticos que estão atualmente em exercício na câmara dos deputados e no senado federal. Além disso, a base fornece também dados sobre os bens declarados de cada uma das atuais excelências do cenário político brasileiro.
 
-## Tecnologias usadas
-
-  Para gerar o RDF e fazer as requisições para a API, optou-se por utilizar a linguagem Python. Os códigos fontes para as requisições feitas e para a geração do arquivo RDF encontram-se nesse repositório, na pasta códigos.
-  
-  Para linkar a base de dados criada com outra base de dados na nuvem de LOD, optou-se por utilizar a ferramenta dataTXT (https://dandelion.eu/products/datatxt/). Essa ferramenta foi encontrada e apresentada em uma aula da disciplina pela prória dupla. Ela possui uma série de recursos que auxiliam na extração de entidades nomeadas em textos. Ela não só identifica as entidades, como traz uma série de outras informações referentes as mesmas.
-  
-  Um fator diferencial do dataTXT para outras ferramentas é a sua capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramenta mostrou-se muito útil e simplificou o trabalho de linkagem com outra base LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
-
 ## Sintaxe 'politica'
 
  Por estar trabalhando com uma base de dados com características próprias e, optou-se por criar uma nova sintaxe a ser referenciada no arquivo rdf. Essa novo sintaxe recebeu o nome de 'política'. 
@@ -71,6 +63,14 @@
  A maior parte das propriedades que compõe a descrição da sintaxe segue o mesmo padrão. Elas são definidas como rdf:Property e seus rdfs:range e são instâncias também de rdf:Property. Elas possuem labels que discernem sua utilidade, como "municipiosPassados", "apelido" e "partido". Esse labels foram escolhidos a partir de cada uma das chaves dos JSON's que eram retornados com os dados solicitados da API da TRansparÊncia Brasil. Por fim, cada um possui um rdfs:comment que explicite sua função.
  
  Certas propriedades, no entanto, são puramente numéricas, como "estadoId", "CPF" e "titulo". Assim, elas foram consideradas como instâncias de números inteiros não-negativos, e o rdfs:range foi colocado como xsd:nonNegativeInteger. A sintaxe gerada encontra-se disponível nesse repositório
+
+## Tecnologias usadas
+
+  Para gerar o RDF e fazer as requisições para a API, optou-se por utilizar a linguagem Python. Os códigos fontes para as requisições feitas e para a geração do arquivo RDF encontram-se nesse repositório, na pasta códigos.
+  
+  Para linkar a base de dados criada com outra base de dados na nuvem de LOD, optou-se por utilizar a ferramenta dataTXT (https://dandelion.eu/products/datatxt/). Essa ferramenta foi encontrada e apresentada em uma aula da disciplina pela prória dupla. Ela possui uma série de recursos que auxiliam na extração de entidades nomeadas em textos. Ela não só identifica as entidades, como traz uma série de outras informações referentes as mesmas.
+  
+  Um fator diferencial do dataTXT para outras ferramentas é a sua capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramenta mostrou-se muito útil e simplificou o trabalho de linkagem com outra base LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
 
 ## Etapas do projeto realizadas
 
