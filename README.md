@@ -72,6 +72,16 @@
  
  Certas propriedades, no entanto, são puramente numéricas, como "estadoId", "CPF" e "titulo". Assim, elas foram consideradas como instâncias de números inteiros não-negativos, e o rdfs:range foi colocado como xsd:nonNegativeInteger. A sintaxe gerada encontra-se disponível nesse repositório
 
+## Etapas do projeto realizadas
+
+  Para gerar o arquivo RDF, optou-se por colher os dados da API e trabalhar diretamente com as strings que comporiam o arquivo. Para gerar a base de dados do trabalho, é gerado um arquivo com extensão .rdf e, a cada requisição feita e informação extraída, a string formadora do conteúdo a ser inserido no arquivo é complementada com a novo informação. Ao final, a string final gerada é inserida no arquivo e o mesmo é salvo.
+  
+  A cada iteração, é feita uma consulta à API da Transparência BRasil, referente a algum dado que ela possui. Uma vez recuperado os dados, os mesmos são extraídos e, para cada entidade requisitada na API, é gerado um recurso no RDF para a mesma. Cada um dos dados referentes a entidade recuperada é considerado como uma propriedade do recurso recém inserido.
+  
+  Além disso, para cada entidade requisitada na base de dados do portal da Transparência, é feita uma requisição para a API do dataTXT, a fim de encontrar um link daquela entidade com o DBPedia. Caso alguma entidade seja encontrada, esse é linkada ao recurso gerado através do 'rdf:about' na descrição do recurso. Caso não seja encontrada nenhuma referência na DBPedia, esse recurso é tratado como um recurso anônimo no RDF.
+  
+  Para cada uma das propriedade dos recursos gerados, é utilizada a sintaxe 'politica' criada nesse trabalho, a fim de descrever o significado de cada uma das propriedades inseridos nos recursos da base.
+
 ## Dificuldades encontradas
 
   Embora muito eficiente, a ferramenta dataTXT por algumas vezes acaba por fazer um link incorreto do recurso colocado na base de dados criada. Ao realizar testes com diferentes níveis de confiança para a extração de entidades nomeadas no dataTXT verificou-se que, com uma confiança alta, algumas entidades nomeadas não dúbias não eram reconhecidas e outras continuavam sendo classificadas incorretamente. Ao colocar a confiança baixa, o número de entidades encontradas era consideravelmente maior e o número de erros era semelhante, proporcionalmente. Optou-se, então, por colocar um nível de confiança baixo na extração das entidades nomeadas para encontrar o link da DBPedia associado ao recurso inserido. Esse valor é de fácil modificação, caso o entendimento para essa questão seja diferente do adotado atualmente.
