@@ -5,7 +5,7 @@
 
 politica:estadoId a rdf:Property ;
      rdfs:label "estadoId" ;
-     rdfs:comment "O identificador do Estado/PaÌs especÌfico" ;
+     rdfs:comment "O identificador do Estado/Pa√≠s espec√≠fico" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range xsd:nonNegativeInteger . 
 
@@ -23,132 +23,132 @@ politica:sigla a rdf:Property ;
 
 politica:partidoId a rdf:Property ;
      rdfs:label "partidoId" ;
-     rdfs:comment "O identificador do partido especÌfico" ;
+     rdfs:comment "O identificador do partido espec√≠fico" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
-     rdfs:range rdf:Property . 
+     rdfs:range xsd:nonNegativeInteger . 
 
 politica:partidosPassados a rdf:Property ;
      rdfs:label "partidosPassados" ;
-     rdfs:comment "Uma lista dos partidos que o polÌtico pertenceu e pertence" ;
+     rdfs:comment "Uma lista dos partidos que o pol√≠tico pertenceu e pertence" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:miniBio a rdf:Property ;
      rdfs:label "miniBio" ;
-     rdfs:comment "Uma pequena biografia do polÌtico" ;
+     rdfs:comment "Uma pequena biografia do pol√≠tico" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:cargosPassados a rdf:Property ;
      rdfs:label "cargosPassados" ;
-     rdfs:comment "Uma lista dos cargos que o polÌtico cumpriu e cumpre" ;
+     rdfs:comment "Uma lista dos cargos que o pol√≠tico cumpriu e cumpre" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:casa a rdf:Property ;
      rdfs:label "casa" ;
-     rdfs:comment "O Ûrg„o ao qual o polÌtico pertence" ;
+     rdfs:comment "O √≥rg√£o ao qual o pol√≠tico pertence" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:anosPassados a rdf:Property ;
      rdfs:label "anosPassados" ;
-     rdfs:comment "Uma lista dos anos em que o polÌtico concorreu a um cargo p˙blico" ;
+     rdfs:comment "Uma lista dos anos em que o pol√≠tico concorreu a um cargo p√∫blico" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:resultadosPassados a rdf:Property ;
      rdfs:label "resultadosPassados" ;
-     rdfs:comment "Com base na lista de anos em que o polÌtico concorreu a um cargo, essa lista mostra se ele foi eleito ou n„o" ;
+     rdfs:comment "Com base na lista de anos em que o pol√≠tico concorreu a um cargo, essa lista mostra se ele foi eleito ou n√£o" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:partido a rdf:Property ;
      rdfs:label "partido" ;
-     rdfs:comment "Partido ao qual o polÌtico pertence atualmente" ;
+     rdfs:comment "Partido ao qual o pol√≠tico pertence atualmente" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:processos a rdf:Property ;
      rdfs:label "processos" ;
-     rdfs:comment "Uma lista dos processos que o polÌtico responde" ;
+     rdfs:comment "Uma lista dos processos que o pol√≠tico responde" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:titulo a rdf:Property ;
      rdfs:label "titulo" ;
-     rdfs:comment "O identificador do tÌtulo eleitoral do polÌtico" ;
+     rdfs:comment "O identificador do t√≠tulo eleitoral do pol√≠tico" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
-     rdfs:range rdf:Property . 
+     rdfs:range xsd:nonNegativeInteger . 
 
 politica:votosPassados a rdf:Property ;
      rdfs:label "votosPassados" ;
-     rdfs:comment "Com base na lista de anos em que o polÌtico concorreu a um cargo, essa lista mostra a quantidade de votos que ele recebeu em cada ano" ;
+     rdfs:comment "Com base na lista de anos em que o pol√≠tico concorreu a um cargo, essa lista mostra a quantidade de votos que ele recebeu em cada ano" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:bancadas a rdf:Property ;
      rdfs:label "bancadas" ;
-     rdfs:comment "Uma lista das bancadas que o polÌtico participa" ;
+     rdfs:comment "Uma lista das bancadas que o pol√≠tico participa" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:estado a rdf:Property ;
      rdfs:label "estado" ;
-     rdfs:comment "O estado no qual o polÌtico em quest„o representa" ;
+     rdfs:comment "O estado no qual o pol√≠tico em quest√£o representa" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:apelido a rdf:Property ;
      rdfs:label "apelido" ;
-     rdfs:comment "Nome com o qual o polÌtico em quest„o È conhecido" ;
+     rdfs:comment "Nome com o qual o pol√≠tico em quest√£o √© conhecido" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:ano a rdf:Property ;
      rdfs:label "ano" ;
-     rdfs:comment "Ano em que o bem em quest„o foi declarado" ;
+     rdfs:comment "Ano em que o bem em quest√£o foi declarado" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
-     rdfs:range rdf:Property . 
+     rdfs:range xsd:nonNegativeInteger . 
 
 politica:montante a rdf:Property ;
      rdfs:label "montante" ;
-     rdfs:comment "Valor monet·rio em reais do bem em quest„o" ;
+     rdfs:comment "Valor monet√°rio em reais do bem em quest√£o" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
-     rdfs:range rdf:Property . 
+     rdfs:range xsd:nonNegativeInteger . 
 
 politica:bem a rdf:Property ;
      rdfs:label "bem" ;
-     rdfs:comment "DescriÁ„o bem em quest„o" ;
+     rdfs:comment "Descri√ß√£o bem em quest√£o" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:municipiosPassados a rdf:Property ;
      rdfs:label "municipiosPassados" ;
-     rdfs:comment "Uma lista dos municipios que o polÌtico representou e representa" ;
+     rdfs:comment "Uma lista dos municipios que o pol√≠tico representou e representa" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:estadosPassados a rdf:Property ;
      rdfs:label "estadosPassados" ;
-     rdfs:comment "Uma lista dos estados que o polÌtico representou e representa" ;
+     rdfs:comment "Uma lista dos estados que o pol√≠tico representou e representa" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
 
 politica:CPF a rdf:Property ;
      rdfs:label "CPF" ;
-     rdfs:comment "N˙mero do CPF do polÌtico em quest„o" ;
+     rdfs:comment "N√∫mero do CPF do pol√≠tico em quest√£o" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
-     rdfs:range rdf:Property . 
+     rdfs:range xsd:nonNegativeInteger . 
 
 politica:id a rdf:Property ;
      rdfs:label "id" ;
-     rdfs:comment "Identificador do polÌtico em quest„o" ;
+     rdfs:comment "Identificador do pol√≠tico em quest√£o" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
-     rdfs:range rdf:Property . 
+     rdfs:range xsd:nonNegativeInteger . 
 
 politica:cargos a rdf:Property ;
      rdfs:label "cargos" ;
-     rdfs:comment "DescriÁ„o do cargo atual do polÌtico" ;
+     rdfs:comment "Descri√ß√£o do cargo atual do pol√≠tico" ;
      rdfs:isDefinedBy https://github.com/rodrigomorgado/LODPolitica/blob/master/sintaxe-politica.txt ;
      rdfs:range rdf:Property . 
