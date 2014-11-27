@@ -30,13 +30,13 @@
     
     4. Cargos - Fornece uma lista de todos os cargos em disputa nas eleições de 2014
     
-    5. Excelências - Fornece informações pessoais e sobre a atuação dos deputados e senadores em atuação no cenário político brasileiro
+    5. Excelências - Fornece informações pessoais e sobre a atuação dos deputados e senadores em atividade no cenário político brasileiro
     
 ### 1. Candidatos
  
- Para cada candidatos, são fornecidas uma série de informações pessoais, como nome completo, CPF, estado da federação a qual ele pertence, entre outras. Além disso, são fornecidos links sobre possíveis processos aos quais o candidato está sendo julgado.
+ Para cada candidato, são fornecidas uma série de informações pessoais, como nome completo, CPF, estado da federação a qual ele pertence, entre outras. Além disso, são fornecidos links sobre possíveis processos aos quais o candidato está sendo julgado.
  
-  É possível também recuperar informações sobre os bens declarados do candidato, sobre suas candidaturas em eleições anteriores e estatísticas sobre a sua atuação em cargos públicos ocupados pelo menos ao longo de sua carreira.
+  É possível também recuperar informações sobre os bens declarados do candidato, sobre suas candidaturas em eleições anteriores e estatísticas sobre a sua atuação em cargos públicos ocupados pelo mesmo ao longo de sua carreira.
   
 ### 2. Partidos
 
@@ -52,7 +52,7 @@
 
 ### 5. Excelências
 
- A API fornece dados pessoais e históricos sobre atuação e candidaturas passadas dos políticos que estão atualemente em exercício na câmara dos deputados e no senado federal. Além disso, a base fornece também dados sobre os bens declarados de cada uma das atuais excelências do cenário político brasileiro.
+ A API fornece dados pessoais e históricos sobre atuação e as candidaturas passadas dos políticos que estão atualmente em exercício na câmara dos deputados e no senado federal. Além disso, a base fornece também dados sobre os bens declarados de cada uma das atuais excelências do cenário político brasileiro.
 
 ## Tecnologias usadas
 
