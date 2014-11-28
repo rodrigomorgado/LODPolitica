@@ -110,17 +110,17 @@ def gera_rdf_candidatos():
 					
 					rdf_resource += "\t</rdf:Description>\n"
 
-				# doadores = api.get_doadores_do_candidato_por_id_em_2014(candidato["id"])
-				# for doador in doadores:
-				# 	rdf_resource += "\t<rdf:Description>\n"
+				doadores = api.get_doadores_do_candidato_por_id_em_2014(candidato["id"])
+				for doador in doadores:
+					rdf_resource += "\t<rdf:Description>\n"
 					
-				# 	for chave_json in doador.keys():
-				# 		if(isinstance(doador[chave_json], bool)):
-				# 			doador[chave_json] = str(doador[chave_json])
+					for chave_json in doador.keys():
+						if(isinstance(doador[chave_json], bool)):
+							doador[chave_json] = str(doador[chave_json])
 
-				# 		rdf_resource += "\t\t<politica:"+ chave_json + ">" + doador[chave_json] + "</politica:" + chave_json + ">\n"
+						rdf_resource += "\t\t<politica:"+ chave_json + ">" + doador[chave_json] + "</politica:" + chave_json + ">\n"
 					
-				# 	rdf_resource += "\t</rdf:Description>\n"
+					rdf_resource += "\t</rdf:Description>\n"
 
 				candidaturas_passadas = api.get_candidaturas_passadas_pelo_id_do_candidato(candidato["id"])
 				for candidatura in candidaturas_passadas:
