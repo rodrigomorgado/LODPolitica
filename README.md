@@ -6,13 +6,13 @@
   
   Com o advento da internet e com a grande disponibilidade de informações, a população tem cada vez mais possibilidade de fiscalizar e tomar conhecimento dos acontecimentos dentro do âmbito político nacional. Nesses eleições em específico, as redes sociais e portais de notícia online tiveram grande participação e influência nos debates que ocorreram entre os eleitores. Muitas denúncias e informações foram propagadas e compartilhadas na rede, sendo algumas verídicas, outras não.
   
-  Durante as aulas da disciplina, foram apresentados alguns conceitos sobre o Linked Open Data, que se trata basicamente de uma série de base de dados aberta, que disponibiliza seus dados na Web em formato RDF, e esses datasets são ligados uns aos outros.
+  Durante as aulas da disciplina, foram apresentados alguns conceitos sobre o Linked Open Data, que se trata basicamente de uma série de base de dados aberta, e que disponibiliza seus dados na Web em formato RDF, com esses datasets ligados uns aos outros.
   
-  A partir daí, surgiu a ideia, a partir de um e-mail enviado no grupo de discussão da disciplina, de unir esses dois mundos e gerar uma base de dados sobre o cenário político brasileiro em RDF, e uni-la a outras bases existentes, contribuindo para a nuvem de LOD. Esse relatório tem por objetivo apresentar as ferramentas e etapas realizadas durante o trabalho, além de citar as dificuldade encontradas ao longo do desenvolvimento e sugestões de trabalhos futuros.
+  A partir daí, surgiu a ideia, a partir de um e-mail enviado no grupo de discussão da disciplina, de unir esses dois mundos e gerar uma base de dados sobre o cenário político brasileiro em RDF, unindo-a a outras bases existentes e contribuindo para a nuvem de LOD. Esse relatório tem por objetivo apresentar as ferramentas e etapas realizadas durante o trabalho, além de citar as dificuldade encontradas ao longo do desenvolvimento e sugestões de trabalhos futuros.
 
 ## Fonte dos dados utilizada
 
-  Para a realização do trabalho, era necessário encontrar uma base de dados com uma boa documentação das informações nela contidas, além de possuir dados variados e confiáveis sobre o cenário político e eleitoral brasileiro. O portal Transparência Brasil (http://www.transparencia.org.br/) disponibilizou em agosto desse ano uma API (http://dev.transparencia.org.br/api-portal/), para acesso aos seus dados, a fim de estimular a construção de projetos e apps que auxiliassem na divulgação e utilização dessas informações pela população, contribuindo para a democracia brasileira.
+  Para a realização do trabalho, era necessário encontrar uma base de dados com uma boa documentação das informações nela contidas, além de possuir dados variados e confiáveis sobre o cenário político e eleitoral brasileiro. O portal Transparência Brasil (http://www.transparencia.org.br/) disponibilizou em agosto desse ano uma API (http://dev.transparencia.org.br/api-portal/) para acesso aos seus dados, a fim de estimular a construção de projetos e apps que auxiliassem na divulgação e utilização dessas informações pela população, contribuindo para a democracia brasileira.
   
   A API é aberta, bastando criar um cadastro no site do próprio portal e inserir no cadastro o app que utilizará os dados da API. Uma vez feito esse processo, é disponibilizado um token para acesso a base de dados. 
   
@@ -22,7 +22,7 @@
 
 ## Informações disponibilizadas na API da Transparência Brasil
 
-  Na API do portal Transparência Brasil, há uma série de informações disponibilizadas. Essas informações podem ser divididas em 5 categorias principais:
+  Na API do portal Transparência Brasil há uma série de informações disponibilizadas. Essas informações podem ser divididas em 5 categorias principais:
   
     1. Candidatos - Fornece informações sobre os candidatos a todos os cargos nas eleições de 2014
     
@@ -72,11 +72,11 @@
   
   Para linkar a base de dados criada com outra base de dados na nuvem de LOD, optou-se por utilizar a ferramenta dataTXT (https://dandelion.eu/products/datatxt/). Essa ferramenta foi encontrada e apresentada em uma aula da disciplina pela prória dupla. Ela possui uma série de recursos que auxiliam na extração de entidades nomeadas em textos. Ela não só identifica as entidades, como traz uma série de outras informações referentes as mesmas.
   
-  Um fator diferencial do dataTXT para outras ferramentas é a sua capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramenta mostrou-se muito útil e simplificou o trabalho de linkagem com outra base de LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
+  Um fator diferencial do dataTXT para outras ferramentas é sua capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramenta mostrou-se muito útil e simplificou o trabalho de linkagem com outra base de LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
 
 ## Etapas do desenvolvimento
 
-  Para gerar o arquivo RDF, optou-se por colher os dados da API e trabalhar diretamente com as strings que comporiam o arquivo. Para gerar a base de dados do trabalho, é gerado um arquivo com extensão .rdf e, a cada requisição feita e informação extraída, a string formadora do conteúdo a ser inserido no arquivo é complementada com a nova informação. Ao final, a string final gerada é inserida no arquivo e o mesmo é salvo.
+  Para gerar o arquivo RDF, optou-se por colher os dados da API e trabalhar diretamente com as strings que iriam compor o arquivo. Para gerar a base de dados do trabalho é gerado um arquivo com extensão .rdf e, a cada requisição feita e informação extraída, a string formadora do conteúdo a ser inserido no arquivo é complementada com a nova informação. Ao final, a string final gerada é inserida no arquivo e o mesmo é salvo.
   
   A cada iteração, é feita uma consulta à API da Transparência BRasil, referente a algum dado que ela possui. Uma vez recuperado os dados, os mesmos são extraídos e, para cada entidade requisitada na API, é gerado um recurso no RDF para a mesma. Cada um dos dados referentes a entidade recuperada é considerado como uma propriedade do recurso recém inserido.
   
