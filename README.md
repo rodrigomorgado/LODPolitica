@@ -74,7 +74,7 @@
   
   Um fator diferencial do dataTXT para outras ferramentas é a sua capacidade de extração de entidades em diversas línguas, incluindo português, o que foi primordial para o trabalho aqui apresentado. Essa ferramenta mostrou-se muito útil e simplificou o trabalho de linkagem com outra base de LOD. No caso, o dataTXT tem a opção de retornar o link para a entidade encontrada na DBPedia.
 
-## Etapas do projeto realizadas
+## Etapas do desenvolvimento
 
   Para gerar o arquivo RDF, optou-se por colher os dados da API e trabalhar diretamente com as strings que comporiam o arquivo. Para gerar a base de dados do trabalho, é gerado um arquivo com extensão .rdf e, a cada requisição feita e informação extraída, a string formadora do conteúdo a ser inserido no arquivo é complementada com a nova informação. Ao final, a string final gerada é inserida no arquivo e o mesmo é salvo.
   
