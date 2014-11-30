@@ -82,7 +82,7 @@
   
   Além disso, para cada entidade requisitada na base de dados do portal da Transparência, é feita uma requisição para a API do dataTXT, a fim de encontrar um link daquela entidade com o DBPedia. Caso alguma entidade seja encontrada, essa é linkada ao recurso gerado através do 'rdf:about' na descrição do mesmo. Caso não seja encontrada nenhuma referência na DBPedia, esse recurso é tratado como um recurso anônimo no RDF.
   
-  Para cada uma das propriedade dos recursos gerados, é utilizada a sintaxe 'politica' criada nesse trabalho, a fim de descrever o significado de cada uma das propriedades inseridos nos recursos da base.
+  Para cada uma das propriedades dos recursos gerados, é utilizada a sintaxe 'politica' criada nesse trabalho, a fim de descrever o significado de cada uma das propriedades inseridos nos recursos da base.
 
 ## Dificuldades encontradas
 
